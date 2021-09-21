@@ -1,0 +1,164 @@
+<link
+  rel="stylesheet"
+  href="<?php echo get_template_directory_uri() ?>/js/vue/mdbDatePicker.css"
+/>
+<script src="https://unpkg.com/vue"></script>
+<script src="<?php echo get_template_directory_uri() ?>/js/vue/mdbDatePicker.umd.min.js"></script>
+<link
+  rel="stylesheet"
+  href="<?php echo get_template_directory_uri() ?>/js/vue/mdbTimePicker.css"
+/>
+<script src="<?php echo get_template_directory_uri() ?>/js/vue/mdbTimePicker.umd.min.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/js/vue/mdb24TimePicker.umd.min.js"></script>
+
+<script src="<?php echo get_template_directory_uri() ?>/js/vue/mdbSimpleChart.js"></script>
+
+
+<script>
+
+  new Vue({
+    components: {
+      mdbDatePicker
+    }
+  }).$mount("#date-picker-basic");
+
+  new Vue({
+    components: {
+      mdbTimePicker
+    }
+  }).$mount("#time-picker-basic");
+
+  new Vue({
+    components: {
+      mdbSimpleChart
+    }
+  }).$mount("#chart-sales");
+
+  new Vue({
+    components: {
+      mdbSimpleChart
+    }
+  }).$mount("#chart-roi");
+
+  new Vue({
+    components: {
+      mdbSimpleChart
+    }
+  }).$mount("#chart-conversion");
+
+  // MDB Lightbox Init
+  $(function() {
+    $("#mdb-lightbox-ui").load("../../../mdb-addons/mdb-lightbox-ui.html");
+  });
+
+  $(function() {
+    $('[data-toggle="popover"]').popover();
+  });
+
+  $(function() {
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+
+  // $(function() {
+  //   //Sales
+  //   $(".min-chart#chart-sales").easyPieChart({
+  //     barColor: "#4caf50",
+  //     onStep: function(from, to, percent) {
+  //       $(this.el)
+  //         .find(".percent")
+  //         .text(Math.round(percent));
+  //     }
+  //   });
+
+  //   //ROI
+  //   $(".min-chart#chart-roi").easyPieChart({
+  //     barColor: "#f44336",
+  //     onStep: function(from, to, percent) {
+  //       $(this.el)
+  //         .find(".percent")
+  //         .text(Math.round(percent));
+  //     }
+  //   });
+
+  //   //Conversion
+  //   $(".min-chart#chart-conversion").easyPieChart({
+  //     barColor: "#9e9e9e",
+  //     onStep: function(from, to, percent) {
+  //       $(this.el)
+  //         .find(".percent")
+  //         .text(Math.round(percent));
+  //     }
+  //   });
+  // });
+</script>
+
+<!-- Structured data: Breadcrumbs -->
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@id": "https://mdbootstrap.com/",
+        "name": "MDBootstrap",
+        "image": "https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg"
+      }
+    },{
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@id": "https://mdbootstrap.com/docs/vue/",
+        "name": "MDBootstrap Vue",
+        "image": "https://mdbootstrap.com/wp-content/uploads/2018/11/mdb-jquery-free.jpg"
+      }
+    },{
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@id": "https://mdbootstrap.com/docs/vue/advanced/",
+        "name": "Advanced",
+        "image": "https://mdbootstrap.com/wp-content/uploads/2016/11/creative-bloq-fb.jpg"
+      },{
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@id": "https://mdbootstrap.com/docs/vue/advanced/demo",
+          "name": "Demo",
+          "image": "https://mdbootstrap.com/wp-content/uploads/2016/11/creative-bloq-fb.jpg"
+        }
+    }]
+  }
+</script>
+
+<!-- Structured data: Article -->
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://mdbootstrap.com/docs/vue/advanced/demo"
+    },
+    "headline": "Vue Advanced Demo - Bootstrap 4 & Material Design. Examples & tutorial.",
+    "image": [
+      "https://mdbootstrap.com/wp-content/uploads/2016/11/creative-bloq-fb.jpg"
+    ],
+    "datePublished": "2018-06-25T08:00:00+08:00",
+    "dateModified": "2018-06-25T09:20:00+08:00",
+    "author": {
+      "@type": "Organization",
+      "name": "MDBootstrap"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "MDBootstrap",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://mdbootstrap.com/wp-content/uploads/2018/06/logo-mdb-jquery-small.png"
+      }
+    },
+    "description": "Learn how to use Material Design for Bootstrap Vue using JavaScript at basic and advanced level. Read our visual guide and comprehensive tutorial about the newest Bootstrap 4."
+  }
+</script>

@@ -1,0 +1,179 @@
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+
+<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/js/vue/lib/mdbTabs/mdbTabs.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/js/vue/lib/mdbTabPane/mdbTabPane.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/js/vue/lib/mdbTabContent/mdbTabContent.css">
+
+
+<script src="<?php echo get_template_directory_uri() ?>/js/vue/lib/mdbTabs/mdbTabs.umd.min.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/js/vue/lib/mdbTab/mdbTab.umd.min.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/js/vue/lib/mdbTabItem/mdbTabItem.umd.min.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/js/vue/lib/mdbTabContent/mdbTabContent.umd.min.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/js/vue/lib/mdbTabPane/mdbTabPane.umd.min.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/js/vue/lib/mdbContainer/mdbContainer.umd.min.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/js/vue/lib/mdbCol/mdbCol.umd.min.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/js/vue/lib/mdbRow/mdbRow.umd.min.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/js/vue/lib/mdbIcon/mdbIcon.umd.min.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/js/vue/lib/mdbJumbotron/mdbJumbotron.umd.min.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/js/vue/lib/mdbView/mdbView.umd.min.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/js/vue/lib/mdbMask/mdbMask.umd.min.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/js/vue/lib/mdbTextarea/mdbTextarea.umd.min.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/js/vue/lib/mdbInput/mdbInput.umd.min.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/js/vue/lib/mdbBtn/mdbBtn.umd.min.js"></script>
+
+<script>
+  new Vue({
+    components: {
+      mdbTabs
+    }
+  }).$mount('#default-tabs-preview');
+
+  new Vue({
+    components: {
+      mdbTabs
+    }
+  }).$mount('#material-tabs-preview');
+
+  new Vue({
+    components: {
+      mdbTabs
+    }
+  }).$mount('#dropdown-tabs-preview');
+
+  new Vue({
+    components: {
+      mdbTabs
+    }
+  }).$mount('#tabs-justified-preview');
+
+  new Vue({
+    components: {
+      mdbTabs
+    }
+  }).$mount('#classic-tabs-preview');
+
+  new Vue({
+    components: {
+      mdbTabs
+    }
+  }).$mount('#classic-tabs-with-shadow-preview');
+
+  new Vue({
+    components: {
+      mdbTabs
+    }
+  }).$mount('#color-options-preview');
+
+  new Vue({
+    components: {
+      mdbTab,
+      mdbTabItem,
+      mdbTabContent,
+      mdbTabPane,
+      mdbContainer,
+      mdbCol,
+      mdbRow,
+      mdbIcon
+    },
+    data() {
+      return {
+        pillsActive: 0,
+        verticalWithin: 0
+      };
+    }
+  }).$mount('#pills-tabs-preview');
+
+  new Vue({
+    components: {
+      mdbContainer,
+      mdbCol,
+      mdbRow,
+      mdbIcon,
+      mdbTabs,
+      mdbJumbotron,
+      mdbView,
+      mdbMask,
+      mdbBtn,
+      mdbTextarea,
+      mdbInput
+    }
+  }).$mount('#html-content-preview');
+</script>
+
+<script>
+  $(document).ready(function() {
+    $('#dropdown-tabs-preview').find('.nav-item').removeClass('waves-effect waves-light');
+  })
+</script>
+
+<!-- Structured data: Breadcrumbs -->
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@id": "https://mdbootstrap.com/",
+        "name": "MDBootstrap",
+        "image": "https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg"
+      }
+    },{
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@id": "https://mdbootstrap.com/docs/vue/",
+        "name": "MDBootstrap Vue",
+        "image": "https://mdbootstrap.com/img/Marketing/products/vue/mdb-free.jpg"
+      }
+    },{
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@id": "https://mdbootstrap.com/docs/vue/components/",
+        "name": "Components",
+        "image": "https://mdbootstrap.com/wp-content/uploads/2016/11/mdb-pro-min-1.jpg"
+      }
+    },{
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@id": "https://mdbootstrap.com/docs/vue/components/tabs/",
+        "name": "Tabs",
+        "image": "https://mdbootstrap.com/wp-content/uploads/2016/05/tabs-fb.jpg"
+      }
+    }]
+  }
+</script>
+
+<!-- Structured data: Article -->
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://mdbootstrap.com/docs/vue/components/tabs/"
+    },
+    "headline": "Vue Tabs - Bootstrap 4 & Material Design. Examples & tutorial.",
+    "image": [
+      "https://mdbootstrap.com/wp-content/uploads/2016/05/tabs-fb.jpg"
+    ],
+    "datePublished": "2018-11-20T08:00:00+08:00",
+    "dateModified": "2018-11-20T09:20:00+08:00",
+    "author": {
+      "@type": "Organization",
+      "name": "MDBootstrap"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "MDBootstrap",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://mdbootstrap.com/wp-content/uploads/2018/06/logo-mdb-jquery-small.png"
+      }
+    },
+    "description": "Vue Bootstrap tabs are components which separate content placed in the same wrapper, but in the separate pane. Only one pane can be displayed at the time."
+  }
+</script>
